@@ -1,0 +1,15 @@
+### Example
+
+To compress:
+tar -pcvzf tar-archive-name.tar.gz source-folder-name
+
+To uncompress: replace -c (compress) with -x (extract)
+tar -pcvzf tar-archive-name.tar.gz source-folder-name
+
+### Options
+
+-c archive with tar
+-x extract
+-p preserve permissions
+-z compress with gzip
+
