@@ -1,0 +1,24 @@
+#!/bin/bash
+# make a command to read/edit personnal man pages
+# this file needs to be copied to /usr/bin and then chmod +x to be used globally
+
+# usage:
+# To read:
+# manb cat
+# To edit:
+# manb -e cat
+
+edit_flag=false
+
+while getopts 'e' flag; do
+  case "$flag" in
+    e) edit_flag='true' ;;
+  esac
+done
+
+if [ $edit_flag = true ]
+then 
+   vim "$HOME/man/manben/$2.ben"
+else
+   less "$HOME/man/manben/$1.ben"
+fi
