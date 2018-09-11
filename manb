@@ -1,12 +1,4 @@
 #!/bin/bash
-# make a command to read/edit personnal man pages
-# this file needs to be copied to /usr/bin and then chmod +x to be used globally
-
-# usage:
-# To read:
-# manb cat
-# To edit:
-# manb -e cat
 
 edit_flag=false
 
