@@ -4,7 +4,7 @@ To compress:
 tar -pcvzf tar-archive-name.tar.gz source-folder-name
 
 To uncompress: replace -c (compress) with -x (extract)
-tar -pcvzf tar-archive-name.tar.gz source-folder-name
+tar -pxvzf tar-archive-name.tar.gz source-folder-name
 
 To uncompress .tar.bz2:
 tar -xjf aaa.tar.bz2
